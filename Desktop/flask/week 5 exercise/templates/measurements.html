@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Measurements</title>
+        <meta http-equiv="refresh" content="5">
+    </head>
+    <body>
+        {% extends "layout.html" %}
+        {% block content %}
+
+        <h1>Measurements</h1>
+
+        {% if measurements == [] %}
+            <p>No measurements at the moment.</p>
+        {% else %}
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Temperature</th>
+                    <th>-</th>
+                    <th>Humidity</th>
+                    <th>-</th>
+                    <th>Light</th>
+        
+
+                </tr>
+                     {% for measurement in measurements %}
+                    <tr>
+                        <td>{{ loop.index }}.</td>
+                        <td>{{ measurement[0] }}</td>
+                        <td></td>
+                        <td>{{ measurement[1] }}</td>
+                        <td></td>
+                        <td>{{ measurement[2] }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% endif %}
+
+            
+        {% endblock %}
+    </body>
+</html>
+
+

@@ -1,0 +1,42 @@
+
+<html>
+    <head>
+        <title>Measurements</title>
+        <meta http-equiv="refresh" content="5">
+    </head>
+    <body>
+        {% extends "layout.html" %}
+        {% block content %}
+
+        <h1>Measurements</h1>
+
+        {% if light_measurements == [] %}
+            <p>No measurements at the moment.</p>
+        {% else %}
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Time</th>
+                    <th></th>
+                    <th>Light</th>
+                </tr>
+                {% for (time, light) in light_measurements %}
+                    <tr>
+                        <td>{{ loop.index }}.</td>
+                        <td>{{ time }}</td>
+                        <td>-</td>
+                        <td>
+                            {{ light }}
+                            {% if loop.last %}.{% else %},{% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% endif %}
+
+            
+        {% endblock %}
+    </body>
+</html>
+
+
