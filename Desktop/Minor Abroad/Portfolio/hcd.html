@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HCD — Xinamayca de Cuba</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400;600&family=Epilogue:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="ring"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">Xinamayca</a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#journey">Journey</a></li>
+    <li><a href="index.html#goals">Goals</a></li>
+    <li><a href="index.html#modules">Modules</a></li>
+    <li><a href="index.html#conclusion">Conclusion</a></li>
+  </ul>
+  <span class="nav-tag">Global Acting in IT · 2026</span>
+</nav>
+
+<section class="module-page">
+  <a href="index.html#modules" class="module-back">Back to modules</a>
+
+  <div class="module-hero reveal">
+    <div class="module-hero-num">01</div>
+    <h1 class="module-hero-title">Human Centered<br>Design</h1>
+    <p class="module-hero-location">✦ Eindhoven, Netherlands · February–April 2026</p>
+  </div>
+
+  <div class="divider"></div>
+  <br>
+
+  <!-- Week navigation -->
+  <div class="week-nav reveal">
+    <button class="week-tab active" onclick="showWeek(1, this)">Week 1</button>
+    <button class="week-tab" onclick="showWeek(2, this)">Week 2</button>
+    <button class="week-tab" onclick="showWeek(3, this)">Week 3</button>
+    <button class="week-tab" onclick="showWeek(4, this)">Week 4</button>
+  </div>
+
+  <!-- Week 1 -->
+  <div class="week-panel active" id="week-1">
+    <div class="week-panel-header">
+      <h2 class="week-panel-title">Research & Discovery</h2>
+    </div>
+    <div class="week-panel-body">
+      <div class="week-docs">
+        <p class="week-docs-label">Deliverables</p>
+        <ul class="week-doc-list">
+          <li class="week-doc-item active" onclick="showDoc('w1', 'research', this)">Research document</li>
+          <li class="week-doc-item" onclick="showDoc('w1', 'stakeholder', this)">Stakeholder analysis</li>
+          <li class="week-doc-item" onclick="showDoc('w1', 'personas', this)">Personas</li>
+        </ul>
+      </div>
+      <div class="week-reflection">
+
+        <div class="doc-content active" id="w1-research">
+          <p class="week-sub">Why</p>
+
+          <p class="week-reflection-body">In the empathise phase it was important that my group and I built a solid understanding of our stakeholders' problems and honestly, as someone who didn't even know what an arboretum was before this, this part was crucial for me personally. Having a good research document we could look back on as we continued through the other phases of design thinking was also really important, rather than jumping straight to solutions without a proper foundation.</p>
+
+          <p class="week-sub">How</p>
+          <p class="week-reflection-body">I helped think along for the main research question and from there I created five sub-questions to help answer it. We used the DOT framework, mainly focusing on literature research. I noticed pretty quickly that things were getting a bit vague and our questions were all over the place, so I decided to create a research plan document to keep everything structured. In this I mapped out which areas I wanted each teammate to focus on, and took on the role of Research Synthesizer myself. This meant I was responsible for looking across all the research and finding answers to questions like: what patterns appear, where do user needs and cost constraints conflict, what gaps exist in current solutions, and what is the core unmet need?</p>
+
+          <p class="week-sub">What</p>
+          <p class="week-reflection-body">I wrote and put together the full research document, combining all my teammates' findings into one final conclusion. This gave our whole team a solid, shared understanding of the problem space to move forward with into the define phase.</p>
+          <hr class="doc-divider">
+          <div class="doc-btn-row">
+            <a href="Research Document.pdf" target="_blank" class="doc-btn">Research document</a>
+            <a href="Research plan.pdf" target="_blank" class="doc-btn">Research plan</a>
+          </div>
+        </div>
+
+        <div class="doc-content" id="w1-researchplan">
+          <p class="week-reflection-body">Add your research plan info here.</p>
+        </div>
+
+        <div class="doc-content" id="w1-stakeholder">
+          <p class="week-reflection-label">✦ Stakeholder analysis</p>
+          <p class="week-reflection-body">Add your stakeholder analysis info here.</p>
+        </div>
+
+        <div class="doc-content" id="w1-personas">
+          <p class="week-reflection-label">✦ Personas</p>
+          <p class="week-reflection-body">Add your personas info here.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Week 2 -->
+  <div class="week-panel" id="week-2">
+    <div class="week-panel-header">
+      <h2 class="week-panel-title">Insights & Synthesis</h2>
+    </div>
+    <div class="week-panel-body">
+      <div class="week-docs">
+        <p class="week-docs-label">Deliverables</p>
+        <ul class="week-doc-list">
+          <li class="week-doc-item">Affinity diagram</li>
+          <li class="week-doc-item">How Might We statements</li>
+          <li class="week-doc-item">Persona</li>
+        </ul>
+      </div>
+      <div class="week-reflection">
+        <p class="week-reflection-label">✦ What happened</p>
+        <p class="week-reflection-body">Add your week 2 description here — what you did, what you made, what you learned.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Week 3 -->
+  <div class="week-panel" id="week-3">
+    <div class="week-panel-header">
+      <h2 class="week-panel-title">Ideation & Concept</h2>
+    </div>
+    <div class="week-panel-body">
+      <div class="week-docs">
+        <p class="week-docs-label">Deliverables</p>
+        <ul class="week-doc-list">
+          <li class="week-doc-item">Concept sketches</li>
+          <li class="week-doc-item">Storyboard</li>
+          <li class="week-doc-item">Concept presentation</li>
+        </ul>
+      </div>
+      <div class="week-reflection">
+        <p class="week-reflection-label">✦ What happened</p>
+        <p class="week-reflection-body">Add your week 3 description here — what you did, what you made, what you learned.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Week 4 -->
+  <div class="week-panel" id="week-4">
+    <div class="week-panel-header">
+      <h2 class="week-panel-title">Prototype & Test</h2>
+    </div>
+    <div class="week-panel-body">
+      <div class="week-docs">
+        <p class="week-docs-label">Deliverables</p>
+        <ul class="week-doc-list">
+          <li class="week-doc-item">Lo-fi prototype</li>
+          <li class="week-doc-item">Usability test report</li>
+          <li class="week-doc-item">Final presentation</li>
+        </ul>
+      </div>
+      <div class="week-reflection">
+        <p class="week-reflection-label">✦ What happened</p>
+        <p class="week-reflection-body">Add your week 4 description here — what you did, what you made, what you learned.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <span class="footer-logo">Xinamayca de Cuba</span>
+  <div class="footer-info">
+    Global Acting in IT · Spring 2026<br>
+    Fontys University of Applied Sciences
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  function showDoc(week, doc, item) {
+    const panel = item.closest('.week-panel-body');
+    panel.querySelectorAll('.week-doc-item').forEach(i => i.classList.remove('active'));
+    panel.querySelectorAll('.doc-content').forEach(d => d.classList.remove('active'));
+    item.classList.add('active');
+    document.getElementById(week + '-' + doc).classList.add('active');
+  }
+
+  function showWeek(num, btn) {
+    document.querySelectorAll('.week-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.week-tab').forEach(b => b.classList.remove('active'));
+    document.getElementById('week-' + num).classList.add('active');
+    btn.classList.add('active');
+  }
+</script>
+</body>
+</html>
